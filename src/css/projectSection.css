@@ -1,0 +1,18 @@
+.projitem:hover .projlink {
+  display: flex;
+  gap: 20px;
+  animation: animeproj 1s ease-in;
+}
+
+@keyframes animeproj {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projlink {
+  display: none;
+}

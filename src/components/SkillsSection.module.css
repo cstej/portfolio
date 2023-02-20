@@ -1,0 +1,11 @@
+.list li {
+  background-color: #121b23;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 2px 6px 0 rgba(51, 37, 37, 0.05), 0 0 3px 0 rgb(0 0 0 / 10%);
+}
+
+.list svg {
+  max-width: 3rem;
+  max-height: 3rem;
+}

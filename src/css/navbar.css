@@ -1,0 +1,51 @@
+.header {
+  /* background: hsla(0, 0%, 100%, 0.9); */
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%), 0 -1px 0 0 rgb(0 0 0 / 8%);
+  /* background-color: rgba(255, 255, 255, 0.07); */
+}
+
+.navitem:hover::after {
+  content: "";
+  position: absolute;
+  /* transform: rotate(20deg); */
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  background-image: url("../assets/lightning-bolt.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  animation: animefade-navitem 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/* .activeitem {
+  color: rgb(253 224 71 1);
+}
+.activeitem::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  background-image: url("../assets/lightning-bolt.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+} */
+
+@keyframes animefade-navitem {
+  from {
+    opacity: 0;
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    background-size: 80px;
+  }
+  to {
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    top: 20px;
+    background-size: 20px;
+  }
+}
